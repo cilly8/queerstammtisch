@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Meine WebApp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="app">
+
+<div id="home" class="screen">
+    <h1>Willkommen</h1>
+
+    <div class="menu">
+        <button onclick="openCategory('cat1')">Kategorie 1</button>
+        <button onclick="openCategory('cat2')">Kategorie 2</button>
+        <button onclick="openCategory('cat3')">Kategorie 3</button>
+    </div>
+
+    <a class="corner left" href="https://example.com" target="_blank">Link A</a>
+    <a class="corner right" href="https://example.com" target="_blank">Link B</a>
+</div>
+
+<div id="category" class="screen hidden">
+    <div class="card" id="cardText"></div>
+
+    <div class="controls">
+        <button onclick="newItem()">Neu</button>
+        <button onclick="goHome()">Zurück</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
