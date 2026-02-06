@@ -1,4 +1,5 @@
-//import emailjs from '@emailjs/browser';
+emailjs.init("vm2c1pIjVYH6J4WUQ");
+
 
 
 const data = {
@@ -120,86 +121,57 @@ const backgrounds = {
     feedback: "images/43.png"
 };
 
+function hideAllScreens() {
+    document.querySelectorAll(".screen")
+        .forEach(s => s.classList.add("hidden"));
+}
+
+
 let currentCategory = null;
 
-function openCategory(cat) {
+window.openCategory = function(cat) {
+
     currentCategory = cat;
-    document.getElementById("home").classList.add("hidden");
-        const catScreen = document.getElementById("category");
 
-        catScreen.classList.remove("hidden");
-        catScreen.style.backgroundImage =
-            `url(${backgrounds[cat]})`
-
-    if (cat !== "feedback")
-    {
-    newItem()}
-    else{
-        // Feedback-Seite
-        catScreen.innerHTML = `
-            <h2 style="text-align:center; margin-bottom:1rem;">Feedback</h2>
-            <textarea id="feedbackText" placeholder="Dein Feedback..." rows="5" style="width:100%; padding:0.5rem;"></textarea>
-            <div style="margin-top:0.5rem;">
-                <button id="sendFeedbackBtn" style="padding:0.5rem 1rem;">Send</button>
-            </div>
-            <p id="status" style="margin-top:0.5rem; color:#fff;"></p>
-        `;
-
-        // Event-Listener für Senden-Button
-        const sendBtn = document.getElementById("sendFeedbackBtn");
-        if (sendBtn) sendBtn.addEventListener("click", () => {
-            const message = document.getElementById("feedbackText").value.trim();
-            const status = document.getElementById("status");
-
-            if (!message) {
-                status.innerText = "Bitte Feedback eingeben!";
-                return 0;
-            }
-
-            // emailjs Logik (auskommentiert, kannst du aktivieren)
-            /*
-            emailjs.send(
-                "service_gee5esf",
-                "template_79siiqp",
-                { message: message }
-            )
-            .then(() => {
-                status.innerText = "✅ Feedback gesendet!";
-                document.getElementById("feedbackText").value = "";
-            })
-            .catch(() => {
-                status.innerText = "❌ Fehler beim Senden!";
-            });
-            */
-
-            // Testmeldung, bis E-Mail aktiviert ist
-            status.innerText = "✅ Feedback simuliert gesendet!";
-            document.getElementById("feedbackText").value = "";
-        });
-    }
-}
-
-function newItem() {
-    const list = data[currentCategory];
-    const item = list[Math.floor(Math.random() * list.length)];
-
-    document.getElementById("cardText").textContent = item;
-}
-
-/*function getFeedback() {
     hideAllScreens();
-    document.getElementById("feedback").classList.remove("hidden");
-}
 
-function hideAllScreens() {
-    document.querySelectorAll(".screen").forEach(s => s.classList.add("hidden"));
-}
-function sendFeedback() {
+    if (cat === "feedback") {
 
-    //emailjs.init("vm2c1pIjVYH6J4WUQ");
+        document
+            .getElementById("feedback")
+            .classList.remove("hidden");
 
-    const message = document.getElementById("feedbackText").value;
-    const status = document.getElementById("status");
+        return;
+    }
+
+    const catScreen =
+        document.getElementById("category");
+
+    catScreen.classList.remove("hidden");
+
+    catScreen.style.backgroundImage =
+        `url(${backgrounds[cat]})`;
+
+    newItem();
+};
+
+
+window.newItem = function() {
+    const list = data[currentCategory];
+    const item =
+        list[Math.floor(Math.random() * list.length)];
+
+    document.getElementById("cardText")
+        .textContent = item;
+};
+
+window.sendFeedback = function() {
+
+    const message =
+        document.getElementById("feedbackText").value;
+
+    const status =
+        document.getElementById("status");
 
     if (!message.trim()) {
         status.innerText = "Bitte Feedback eingeben!";
@@ -218,12 +190,19 @@ function sendFeedback() {
         .catch(() => {
             status.innerText = "❌ Fehler beim Senden!";
         });
-}*/
+};
 
 
-function goHome() {
+window.goHome = function() {
+    hideAllScreens();
+    document.getElementById("home")
+        .classList.remove("hidden");
+};
+
+
+/*function goHome() {
     document.getElementById("category").classList.add("hidden");
     document.getElementById("home").classList.remove("hidden");
 }
-
+*/
 
