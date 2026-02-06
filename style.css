@@ -45,13 +45,23 @@ body {
 
 .corner {
     position: absolute;
-    bottom: 20px;
     padding: 10px 20px;
     background: black;
     text-decoration: none;
     color: white;
+    bottom: 10px;
 }
 
-.left { left: 20px;
-        background-image: url("images/Logo-Sofra-without-Background-scaled.jpg")}
-.right { right: 20px; }
+.left {
+    left: 60px;
+    );
+}
+.right { right: 20px}
+
+.logo {
+    left: 80px;
+    height: 120px;
+    width: 300px;
+    top: 20px;
+    background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
+    background-size: max(300px, 300px)}
