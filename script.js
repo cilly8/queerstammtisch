@@ -139,7 +139,42 @@ function newItem() {
     document.getElementById("cardText").textContent = item;
 }
 
+function getFeedback() {
+    hideAllScreens();
+    document.getElementById("feedback").classList.remove("hidden");
+}
+
+function hideAllScreens() {
+    document.querySelectorAll(".screen").forEach(s => s.classList.add("hidden"));
+}
+function sendFeedback() {
+
+    const message = document.getElementById("feedbackText").value;
+    const status = document.getElementById("status");
+
+    if (!message.trim()) {
+        status.innerText = "Bitte Feedback eingeben!";
+        return;
+    }
+
+    emailjs.send(
+        "service_gee5esf",
+        "template_79siiqp",
+        { message: message }
+    )
+        .then(() => {
+            status.innerText = "✅ Feedback gesendet!";
+            document.getElementById("feedbackText").value = "";
+        })
+        .catch(() => {
+            status.innerText = "❌ Fehler beim Senden!";
+        });
+}
+
+
 function goHome() {
     document.getElementById("category").classList.add("hidden");
     document.getElementById("home").classList.remove("hidden");
 }
+
+

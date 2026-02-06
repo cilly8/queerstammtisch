@@ -80,3 +80,20 @@ body {
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
     background-size: max(180px, 180px)
 }
+.feedback-bg {
+    background: url("images/43.png") center/cover no-repeat;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+}
+

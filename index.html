@@ -19,7 +19,7 @@
     </div>
 
     <a class="corner left" href="https://sofra.cologne/spenden/" target="_blank">Donate</a>
-    <button class= "corner right" onclick="openCategory('feedback')">Feedback?</button>
+    <button class= "corner right" onclick="getFeedback('feedback')">Feedback?</button>
     <a class="logo" href="https://sofra.cologne/spenden/"></a>
 </div>
 
@@ -33,5 +33,25 @@
 </div>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    (function(){
+        emailjs.init("vm2c1pIjVYH6J4WUQ");
+    })();
+</script>
+<div id="feedback" class="screen hidden feedback-bg">
+    <h2>Feedback senden</h2>
+
+    <textarea id="feedbackText" placeholder="Dein Feedback..."></textarea>
+
+    <div class="controls">
+        <button onclick="sendFeedback()">Senden</button>
+        <button onclick="goHome()">Zurück</button>
+    </div>
+
+    <p id="status"></p>
+</div>
+
 </body>
 </html>
