@@ -15,9 +15,10 @@ const data = {
 };
 
 const backgrounds = {
-    cat1: "images/bg1.jpg",
-    cat2: "images/bg2.jpg",
-    cat3: "images/bg3.jpg"
+    cat1: "images/39.png",
+    cat2: "images/45.png",
+    cat3: "images/35.png",
+    feedback: "images/43.png"
 };
 
 let currentCategory = null;
