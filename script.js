@@ -133,7 +133,6 @@ function openCategory(cat) {
 
     if (cat !== "feedback")
     {
-
     newItem()}
     else{
         // Feedback-Seite
