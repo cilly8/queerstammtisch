@@ -79,7 +79,11 @@ body {
     width: 165px;
     );
 }
-.right { right: 20px}
+.right {
+    right: 20px;
+    background-color: black;
+    color: #FFFFFF;
+}
 
 .logo {
     position: absolute;
