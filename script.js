@@ -1,3 +1,6 @@
+//import emailjs from '@emailjs/browser';
+
+
 const data = {
     cat1: [
         "Never have I ever...\nghosted somebody",
@@ -139,7 +142,7 @@ function newItem() {
     document.getElementById("cardText").textContent = item;
 }
 
-function getFeedback() {
+/*function getFeedback() {
     hideAllScreens();
     document.getElementById("feedback").classList.remove("hidden");
 }
@@ -148,6 +151,8 @@ function hideAllScreens() {
     document.querySelectorAll(".screen").forEach(s => s.classList.add("hidden"));
 }
 function sendFeedback() {
+
+    //emailjs.init("vm2c1pIjVYH6J4WUQ");
 
     const message = document.getElementById("feedbackText").value;
     const status = document.getElementById("status");
@@ -169,7 +174,7 @@ function sendFeedback() {
         .catch(() => {
             status.innerText = "❌ Fehler beim Senden!";
         });
-}
+}*/
 
 
 function goHome() {
