@@ -38,9 +38,9 @@ body {
     background: rgba(0,0,0,0.7);
     padding: 40px;
     border-radius: 12px;
-    font-size: 22px;
+    font-size: 68px;
     text-align: center;
-    width: 60%;
+    width: 80%;
 }
 
 .controls button,
@@ -60,12 +60,13 @@ body {
     text-decoration: none;
     color: black;
     bottom: 10px;
-    font-size: 32px;
+    font-size: 50px;
+    text-align: center;
 }
 
 .left {
     left: 60px;
-    width: 110px;
+    width: 145px;
     );
 }
 .right { right: 20px}
@@ -73,9 +74,9 @@ body {
 .logo {
     position: absolute;
     left: 60px;
-    height: 60px;
-    width: 150px;
-    bottom: 65px;
+    height: 70px;
+    width: 185px;
+    bottom: 80px;
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
-    background-size: max(150px, 150px)
+    background-size: max(180px, 180px)
 }
