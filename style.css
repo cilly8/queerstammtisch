@@ -15,8 +15,7 @@ body {
     background-position: center;
 }
 .h1 {
-    position: absolute;
-    top: 25%;
+    font-size: 56px;
 }
 
 .hidden {
