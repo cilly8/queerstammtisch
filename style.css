@@ -11,6 +11,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 64px;
+    text-align: center;
+    top: 20px;
 
     background-size: cover;
     background-position: center;
