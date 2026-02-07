@@ -200,9 +200,5 @@ window.goHome = function() {
 };
 
 
-/*function goHome() {
-    document.getElementById("category").classList.add("hidden");
-    document.getElementById("home").classList.remove("hidden");
-}
-*/
+
 
