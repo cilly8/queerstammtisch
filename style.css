@@ -204,6 +204,9 @@ textarea {
     position: absolute;
     z-index: 1;
 }
+#circle-link {
+    display: inline-block;
+}
 
 #circle2
 {
