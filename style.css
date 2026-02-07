@@ -25,19 +25,28 @@ body {
     position: absolute;
     top: -40px;
     font-size: 100px;
+    -webkit-text-stroke: 3px #ff3cff;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 .h2 {
     position: absolute;
     font-style: oblique;
-    -webkit-text-stroke: 3px white;
     top: 150px;
     font-size: 120px;
-    color: hotpink;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 5px #ff3cff;
+    font-family: "Montserrat Black", "Arial Black", sans-serif;
 }
 .h3 {
+    -webkit-text-stroke: 3px #ff3cff;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
     position: absolute;
     top: 300px;
-    font-size: 100px;
 }
 
 .hidden {
