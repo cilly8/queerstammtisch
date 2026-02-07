@@ -146,3 +146,9 @@ textarea {
     font-weight: bold;
 }
 
+#feedbackText {
+    width: 80vw;
+    height: 180px;
+    padding: 15px;
+    font-size: clamp(18px, 4vw, 26px);
+}
