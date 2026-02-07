@@ -26,7 +26,11 @@ body {
     position: absolute;
     top: -40px;
     font-size: 100px;
-    -webkit-text-stroke: 3px #ff3cff;
+    text-shadow:
+            3px  3px 0 #ff3cff,
+            -3px  3px 0 #ff3cff,
+            3px -3px 0 #ff3cff,
+            -3px -3px 0 #ff3cff;
     font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 500;
     -webkit-text-size-adjust: 100%;
@@ -38,12 +42,21 @@ body {
     font-size: 120px;
     font-weight: 900;
     color: white;
-    -webkit-text-stroke: 5px #ff3cff;
-    font-family: "Montserrat Black", "Arial Black", sans-serif;
+    text-shadow:
+            5px  5px 0 #ff3cff,
+            -5px  5px 0 #ff3cff,
+            5px -5px 0 #ff3cff,
+            -5px -5px 0 #ff3cff;
+    font-family: "Montserrat", sans-serif;
     -webkit-text-size-adjust: 100%;
 }
+
 .h3 {
-    -webkit-text-stroke: 3px #ff3cff;
+    text-shadow:
+            3px  3px 0 #ff3cff,
+            -3px  3px 0 #ff3cff,
+            3px -3px 0 #ff3cff,
+            -3px -3px 0 #ff3cff;
     font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 100px;
