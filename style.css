@@ -67,8 +67,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 500px;
-    flex: 10px;
+    flex: 100px;
     top: 300px;
     text-align: center;
     align-items: center;
@@ -91,7 +90,7 @@ body {
     background: white;
     text-decoration: none;
     color: black;
-    bottom: -400px;
+    bottom: -350px;
     font-size: 50px;
     text-align: center;
     border-radius: 15px;
@@ -113,7 +112,7 @@ body {
     left: 60px;
     height: 70px;
     width: 185px;
-    bottom: -330px;
+    bottom: -280px;
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
     background-size: max(180px, 180px);
     border-radius: 15px;
