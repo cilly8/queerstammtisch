@@ -114,7 +114,6 @@ const data = {
     ]
 };
 
-//const htmlText = data.replace(/\n/g, "<br>");
 
 const backgrounds = {
     cat1: "images/39.png",
@@ -158,14 +157,17 @@ window.openCategory = function(cat) {
 };
 
 
+
 window.newItem = function() {
     const list = data[currentCategory];
     const item =
         list[Math.floor(Math.random() * list.length)];
 
-    document.getElementById("cardText")
-        .textContent = item;
+    const htmlText = item.replace(/\n/g, "<br>");
+
+    document.getElementById("cardText").innerHTML = htmlText;
 };
+
 
 window.sendFeedback = function() {
 
