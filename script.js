@@ -114,6 +114,8 @@ const data = {
     ]
 };
 
+//const htmlText = data.replace(/\n/g, "<br>");
+
 const backgrounds = {
     cat1: "images/39.png",
     cat2: "images/41.png",
