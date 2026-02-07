@@ -147,8 +147,8 @@ textarea {
 }
 
 #feedbackText {
-    width: 80vw;
-    height: 180px;
+    width: 500px;
+    height: 1000px;
     padding: 15px;
-    font-size: clamp(18px, 4vw, 26px);
+    font-size: 50px;
 }
