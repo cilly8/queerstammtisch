@@ -116,8 +116,8 @@ const data = {
 
 const backgrounds = {
     cat1: "images/39.png",
-    cat2: "images/45.png",
-    cat3: "images/35.png",
+    cat2: "images/41.png",
+    cat3: "images/45.png",
     feedback: "images/43.png"
 };
 
