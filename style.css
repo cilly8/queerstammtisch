@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: sans-serif;
     color: white;
+    height: 2500px;
+    text-align: center;
 }
 
 .screen {
@@ -13,6 +15,7 @@ body {
     font-size: 64px;
     text-align: center;
     top: 20px;
+
 
     background-size: cover;
     background-position: center;
@@ -42,6 +45,10 @@ body {
 
 #home {
     background-image: url("images/35.png");
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .card {
@@ -56,9 +63,17 @@ body {
 .controls button,
 .menu button {
     position: relative;
-    top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 500px;
+    flex: 10px;
+    top: 300px;
+    text-align: center;
+    align-items: center;
+    width: 600px;
     margin: 10px;
-    padding: 15px 25px;
+    padding: 15px;
     font-size: 70px;
     cursor: pointer;
     color: white;
@@ -66,6 +81,7 @@ body {
     border-color: white;
     border-radius: 15px;
     border-width: 4px;
+    text-align-last: center;
 }
 
 .corner {
@@ -74,7 +90,7 @@ body {
     background: white;
     text-decoration: none;
     color: black;
-    bottom: 10px;
+    bottom: -450px;
     font-size: 50px;
     text-align: center;
     border-radius: 15px;
@@ -96,7 +112,7 @@ body {
     left: 60px;
     height: 70px;
     width: 185px;
-    bottom: 80px;
+    bottom: -380px;
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
     background-size: max(180px, 180px);
     border-radius: 15px;
