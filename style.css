@@ -23,20 +23,21 @@ body {
 }
 .h1 {
     position: absolute;
-    top: -60px;
+    top: -40px;
+    font-size: 100px;
 }
 .h2 {
     position: absolute;
     font-style: oblique;
     -webkit-text-stroke: 3px white;
-    top: 120px;
-    font-size: 72px;
+    top: 150px;
+    font-size: 120px;
     color: hotpink;
 }
 .h3 {
     position: absolute;
-    top: 200px;
-    font-size: 64px;
+    top: 250px;
+    font-size: 100px;
 }
 
 .hidden {
@@ -90,7 +91,7 @@ body {
     background: white;
     text-decoration: none;
     color: black;
-    bottom: -450px;
+    bottom: -400px;
     font-size: 50px;
     text-align: center;
     border-radius: 15px;
@@ -112,7 +113,7 @@ body {
     left: 60px;
     height: 70px;
     width: 185px;
-    bottom: -380px;
+    bottom: -330px;
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
     background-size: max(180px, 180px);
     border-radius: 15px;
