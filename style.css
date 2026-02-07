@@ -20,6 +20,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 .h1 {
     position: absolute;
@@ -106,6 +107,7 @@ body {
     font-size: 50px;
     text-align: center;
     border-radius: 15px;
+    z-index: 2;
 }
 
 .left {
@@ -128,6 +130,7 @@ body {
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
     background-size: max(180px, 180px);
     border-radius: 15px;
+    z-index: 2;
 }
 .feedback-bg {
     background: url("images/43.png") center/cover no-repeat;
@@ -156,11 +159,12 @@ textarea {
 
 #circle {
     background: #FFFFFF;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    left: 60px;
-    bottom: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    left: 25px;
+    bottom: -110px;
     position: absolute;
+    z-index: 1;
 }
 
