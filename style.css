@@ -28,6 +28,7 @@ body {
     -webkit-text-stroke: 3px #ff3cff;
     font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 500;
+    -webkit-text-size-adjust: 100%;
 }
 .h2 {
     position: absolute;
@@ -38,6 +39,7 @@ body {
     color: white;
     -webkit-text-stroke: 5px #ff3cff;
     font-family: "Montserrat Black", "Arial Black", sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 .h3 {
     -webkit-text-stroke: 3px #ff3cff;
@@ -46,7 +48,8 @@ body {
     font-size: 100px;
     color: white;
     position: absolute;
-    top: 300px;
+    top: 600px;
+    -webkit-text-size-adjust: 100%;
 }
 
 .hidden {
@@ -99,7 +102,7 @@ body {
     background: white;
     text-decoration: none;
     color: black;
-    bottom: -300px;
+    bottom: -150px;
     font-size: 50px;
     text-align: center;
     border-radius: 15px;
@@ -121,7 +124,7 @@ body {
     left: 60px;
     height: 70px;
     width: 185px;
-    bottom: -230px;
+    bottom: -80px;
     background-image: url("images/Logo-Sofra-without-Background-scaled.jpg");
     background-size: max(180px, 180px);
     border-radius: 15px;
