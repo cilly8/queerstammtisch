@@ -114,6 +114,12 @@ const data = {
     ]
 };
 
+const usedItems = {
+    cat1: new Set(),
+    cat2: new Set(),
+    cat3: new Set()
+};
+
 
 const backgrounds = {
     cat1: "images/39.png",
@@ -133,6 +139,8 @@ let currentCategory = null;
 window.openCategory = function(cat) {
 
     currentCategory = cat;
+
+    usedItems[cat] = new Set();
 
     hideAllScreens();
 
@@ -156,15 +164,22 @@ window.openCategory = function(cat) {
     newItem();
 };
 
-
-
 window.newItem = function() {
     const list = data[currentCategory];
-    const item =
-        list[Math.floor(Math.random() * list.length)];
+
+    if (usedItems[currentCategory].size === list.length) {
+        usedItems[currentCategory] = new Set();
+    }
+
+    let item;
+
+    do {
+        item = list[Math.floor(Math.random() * list.length)];
+    } while (usedItems[currentCategory].has(item));
+
+    usedItems[currentCategory].add(item);
 
     const htmlText = item.replace(/\n/g, "<br>");
-
     document.getElementById("cardText").innerHTML = htmlText;
 };
 
