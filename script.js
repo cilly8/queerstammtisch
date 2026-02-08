@@ -195,7 +195,7 @@ window.sendFeedback = function() {
         document.getElementById("status");
 
     if (!message.trim()) {
-        status.innerText = "Bitte Feedback eingeben!";
+        status.innerText = "Please enter feedback!!";
         return;
     }
 
@@ -205,11 +205,11 @@ window.sendFeedback = function() {
         { message: message }
     )
         .then(() => {
-            status.innerText = "✅ Feedback gesendet!";
+            status.innerText = "✅ Feedback sent!";
             document.getElementById("feedbackText").value = "";
         })
         .catch(() => {
-            status.innerText = "❌ Fehler beim Senden!";
+            status.innerText = "❌ Error, sending failed!";
         });
 };
 
