@@ -181,8 +181,8 @@ window.newItem = function() {
 
     let htmlText = item
         .replace(/\n/g, "<br>")
-        .replace(/Never have I ever\.\.\./g, "<strong><em>Never Have I Ever...</em></strong>")
-        .replace(/This or That?/g, "<strong><em>This or That?</em></strong>");
+        .replace(/Never have I ever\.\.\./g, "<strong><em>Never Have I Ever...<br></em></strong>")
+        .replace(/This or That\?/g, "<strong><em>This or That?<br></em></strong>");
 
     document.getElementById("cardText").innerHTML = htmlText;
 };
