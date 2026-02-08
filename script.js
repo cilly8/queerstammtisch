@@ -179,7 +179,11 @@ window.newItem = function() {
 
     usedItems[currentCategory].add(item);
 
-    const htmlText = item.replace(/\n/g, "<br>");
+    let htmlText = item
+        .replace(/\n/g, "<br>")
+        .replace(/Never have I ever\.\.\./g, "<strong><em>Never Have I Ever...</em></strong>")
+        .replace(/This or That?/g, "<strong><em>This or That?</em></strong>");
+
     document.getElementById("cardText").innerHTML = htmlText;
 };
 
