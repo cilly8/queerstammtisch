@@ -31,7 +31,16 @@ const data = {
         "This or That?\nRed or white wine?",
         "This or That?\nSummer or winter?",
         "Never have I ever...\nstayed up all night texting someone I liked",
-
+        "Never have I ever...\had the same crush as a close friend",
+        "Never have I ever...\nneeded more than a year to get over someone",
+        "Never have I ever...\nbeen the reason someone questioned their sexuality",
+        "Never have I ever...\ncaught feelings when it was supposed to be just physical",
+        "Never have I ever...\nthought “this is a bad idea” and did it anyway",
+        "Never have I ever...\nbeen the emotionally unavailable one",
+        "Never have I ever...\nhad chemistry so intense it was hard to focus on anything else",
+        "Never have I ever...\nhad intense gay panic",
+        "Never have I ever...\nhad a friendship end over romantic drama/confusion",
+        "Never have I ever...\nwanted someone before even knowing their name"
     ],
     cat2: [
         "Never have I ever...\nhooked up with someone twice my age",
