@@ -40,7 +40,12 @@ const data = {
         "Never have I ever...\nhad chemistry so intense it was hard to focus on anything else",
         "Never have I ever...\nhad intense gay panic",
         "Never have I ever...\nhad a friendship end over romantic drama/confusion",
-        "Never have I ever...\nwanted someone before even knowing their name"
+        "Never have I ever...\nwanted someone before even knowing their name",
+        "Never have I ever...\nthought “she’s just really friendly” (she was not)",
+        "Never have I ever...\ndone the “am I gay” test",
+        "Never have I ever...\nbeen in a very homoerotic friendship that everyone else clocked immediately",
+        "Never have I ever...\nmatched with someone I already knew on a dating app",
+        "Never have I ever...\nhad multiple Coming Outs"
     ],
     cat2: [
         "Never have I ever...\nhooked up with someone twice my age",
@@ -81,18 +86,22 @@ const data = {
         "This or That?\nBreak up sex or make up sex?",
         "This or That?\nHouse party or club?",
         "This or That?\nAftercare or going home directly?",
-    ],
-    cat3: [
-        "Never have I ever...\nsexted",
-        "Never have I ever...\nsent nudes",
-        "Never have I ever...\ngiven sex advice",
+        "Never have I ever...\nhooked up with somebody while travelling",
+        "Never have I ever...\ngiven or received a lap dance",
         "Never have I ever...\nslept with a person on the first date",
         "Never have I ever...\nbeen walked in while having sex",
         "Never have I ever...\nhooked up with an ex",
         "Never have I ever...\nhooked up with a friend",
-        "Never have I ever...\nhooked up with somebody while travelling",
-        "Never have I ever...\ngiven or received a lap dance",
+        "Never have I ever...\nsexted",
+        "Never have I ever...\nsent nudes",
+        "Never have I ever...\ngiven sex advice",
         "Never have I ever...\ngiven or received a hickey",
+        "Never have I ever...\nlied about my body count",
+        "Never have I ever...\nthought about someone else during sex",
+        "Never have I ever...\ntold someone 'I love you' without meaning it"
+    ],
+    cat3: [
+
         "Never have I ever...\nhad sex in a club",
         "Never have I ever...\nhad sex on the beach",
         "Never have I ever...\nscissored",
@@ -189,8 +198,8 @@ window.newItem = function() {
     let htmlText = item
         .replace(/\n/g, "<br>")
         .replace(/Never have I ever\.\.\./g, "<strong><em>Never Have I Ever...<br></em></strong>")
-        .replace(/This or That\?/g, "<strong><em>This or That?<br></em></strong>");
-
+        .replace(/This or That\?/g, "<strong><em>This or That?<br></em></strong>")
+        .replace(/'/g,"&quot;")
     document.getElementById("cardText").innerHTML = htmlText;
 };
 
