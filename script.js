@@ -174,7 +174,7 @@ const data = {
     cat4:[
         "Orange Is The New Black: Piper, Alex & Poussey",
         "The L-Word: Shane, Bette & Tina",
-        "Elena (One Day At A Time), Casey & Izzy
+        "Elena (One Day At A Time), Casey & Izzy"
     ]
 };
 

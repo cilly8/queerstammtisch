@@ -198,8 +198,8 @@ textarea {
 
 #circle {
     background: #FFFFFF;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
     left: 25px;
     bottom: -110px;
@@ -216,8 +216,8 @@ textarea {
 #circle2
 {
     background: #000000;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
     right: 25px;
     bottom: -110px;
