@@ -170,13 +170,19 @@ const data = {
         "This or That?\nKnowing it’s a bad idea or finding out later?",
         "This or That?\nStaying the night or leaving before morning?",
         "This or That?\nStaying quiet or letting reactions show?"
+    ],
+    cat4:[
+        "Orange Is The New Black: Piper, Alex & Poussey",
+        "The L-Word: Shane, Bette & Tina",
+        "Elena (One Day At A Time), Casey & Izzy
     ]
 };
 
 const usedItems = {
     cat1: new Set(),
     cat2: new Set(),
-    cat3: new Set()
+    cat3: new Set(),
+    cat4: new Set(),
 };
 
 
@@ -184,6 +190,7 @@ const backgrounds = {
     cat1: "images/39.png",
     cat2: "images/41.png",
     cat3: "images/45.png",
+    cat4: "images/46.png",
     feedback: "images/43.png"
 };
 
